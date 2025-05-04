@@ -1,0 +1,86 @@
+.examples-section {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.examples-section.collapsed {
+  padding: 15px;
+}
+
+.examples-section.collapsed p,
+.examples-section.collapsed .example-images {
+  display: none;
+}
+
+.examples-section.expanded {
+  max-height: 1000px;
+}
+
+.examples-section h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #2196F3;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.toggle-button:hover {
+  background-color: rgba(33, 150, 243, 0.1);
+}
+
+.examples-section p {
+  margin: 0 0 15px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.example-images {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.example-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.example-image-container:hover {
+  transform: scale(1.05);
+}
+
+.example-image {
+  width: 200px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.example-description {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+} 
